@@ -1,1 +1,1 @@
-Personal Website @ https://kts707.github.io/kuaitianshu.github.io/
+Personal Website @ https://tianshukuai.github.io/
