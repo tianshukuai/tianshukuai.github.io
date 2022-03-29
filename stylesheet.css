@@ -105,6 +105,11 @@ name {
   font-size: 32px;
 }
 
+cname {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 22px;
+}
+
 .one {
   width: 160px;
   height: 160px;
@@ -124,6 +129,13 @@ name {
   transition: opacity .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;
   -webkit-transition: opacity .2s ease-in-out;
+}
+
+
+.ball {
+  position: absolute;
+  border-radius: 100%;
+  opacity: 0.7;
 }
 
 span.highlight {
