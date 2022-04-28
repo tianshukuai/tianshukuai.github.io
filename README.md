@@ -1,1 +1,1 @@
-Personal Website @ https://tianshukuai.github.io/
+Personal Website for Tianshu Kuai @ https://tianshukuai.github.io/
