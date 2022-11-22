@@ -1,65 +1,18 @@
 <!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>Tianshu Kuai</title>
-  
   <meta name="author" content="Tianshu Kuai">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="google-site-verification" content="svitosNtbUFrqLt9pVPIsMkLmO65sRK0gWewOcVaj9M" />
   
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link rel="icon" type="image/png" href="images/seal_icon.png">
+  <!-- <link rel="icon" type="image/png" href="images/icon.png"> -->
 </head>
 
 <body>
-  <script>
-      const colors = ["#3CC157","#4B0082","#2AA7FF","#1B1B1B","46403E","#FCBC0F","#F85F36"];
-  
-      const numBalls = 100;
-      const balls = [];
-  
-      for (let i = 0; i < numBalls; i++) {
-        let ball = document.createElement("div");
-        ball.classList.add("ball");
-        ball.style.background = colors[Math.floor(Math.random() * colors.length)];
-        let left_pos = Math.floor(Math.random() * 40);
-        if (left_pos >= 20) {
-          left_pos = left_pos + 60;
-        }
-        ball.style.left = `${left_pos}vw`;
-        ball.style.top = `${Math.floor(Math.random() * 150)}vh`;
-        ball.style.transform = `scale(${Math.random()})`;
-        ball.style.width = `${Math.random()}em`;
-        ball.style.height = ball.style.width;
-        ball.style.opacity = 0.3;
-
-        balls.push(ball);
-        document.body.append(ball);
-      }
-  
-      // Keyframes
-      balls.forEach((el, i, ra) => {
-        let to = {
-          x: Math.random() * (i % 2 === 0 ? -5 : 5),
-          y: Math.random() * 5
-        };
-  
-        let anim = el.animate(
-          [
-            { transform: "translate(0, 0)" },
-            { transform: `translate(${to.x}rem, ${to.y}rem)` }
-          ],
-          {
-            duration: (Math.random() + 1) * 2500, // random duration
-            direction: "alternate",
-            fill: "both",
-            iterations: Infinity,
-            easing: "ease-in-out"
-          }
-        );
-      });
-  </script>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;background-color:#f9f9f9;"><tbody>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
     <tr style="padding:0px">
       <td style="padding:0px">
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -68,16 +21,16 @@
               <p style="text-align:center">
                 <name>Tianshu Kuai</name>
               </p>
-              <p>I am a <a href="https://www.sgs.utoronto.ca/programs/applied-computing/">Master of Science in Applied Computing</a> student in the <a href="https://web.cs.toronto.edu/">Department of Computer Science</a> at the <a href="https://www.utoronto.ca/">University of Toronto</a>.
+              <p>I am a <a href="https://www.sgs.utoronto.ca/programs/applied-computing/">Master of Science in Applied Computing</a> student in the <a href="https://web.cs.toronto.edu/">Department of Computer Science</a> at the <a href="https://www.utoronto.ca/">University of Toronto</a>, supervised by <a href="https://www.gilitschenski.org/igor/">Prof. Igor Gilitschenski</a>.
               </p>
+              <p>
+                I graduated from the <a href="https://engsci.utoronto.ca/program/majors/robotics-engineering/">Engineering Science</a> Program at the University of Toronto, with Major in Robotics, and Minor in Artificial Intelligence. I was fortunate to work with <a href="https://www.trailab.utias.utoronto.ca/stevenwaslander">Prof. Steven L. Waslander</a> at <a href="https://www.trailab.utias.utoronto.ca/">TRAILab</a> on 3D LiDAR object detection framework. I also had the opportunity to collaborate with <a href="https://www.comm.utoronto.ca/~dkundur/about/">Prof. Deepa Kundur</a> at the University of Toronto and colleagues from <a href="https://www.qualcomm.com/">Qualcomm</a> during my undergraduate studies.
               </p>
-              <p>I graduated from the <a href="https://engsci.utoronto.ca/program/majors/robotics-engineering/">Engineering Science</a> Program at the University of Toronto, with Major in Robotics, and Minor in Artificial Intelligence. I was fortunate to work with <a href="https://www.trailab.utias.utoronto.ca/stevenwaslander">Prof. Steven L. Waslander</a> at <a href="https://www.trailab.utias.utoronto.ca/">TRAILab</a> on 3D LiDAR object detection framework. I also had the opportunity to collaborate with <a href="https://www.comm.utoronto.ca/~dkundur/about/">Prof. Deepa Kundur</a> at the University of Toronto and colleagues from <a href="https://www.qualcomm.com/">Qualcomm</a> during my undergraduate studies.
-              </p>
-              </p>
-              <p>My research interest lies at the intersection of Computer Vision, Machine Learning, and Robotics.
+              <p>
+                My research interest lies at the intersection of Computer Vision, Machine Learning, and Robotics.
               </p>
               <p style="text-align:center">
-                <a href="mailto:tianshu.kuai@mail.utoronto.ca">Email</a> &nbsp/&nbsp
+                <a href="mailto:tkuai@cs.toronto.edu">Email</a> &nbsp/&nbsp
                 <a href="data/Tianshu_Kuai_CV.pdf">CV</a> &nbsp/&nbsp
                 <a href="https://scholar.google.com/citations?user=mFQ8ICgAAAAJ&hl=en&oi=ao">Google Scholar</a> &nbsp/&nbsp
                 <a href="https://github.com/kts707">Github</a> &nbsp/&nbsp
@@ -99,7 +52,7 @@
             </td>
           </tr>
         </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;background-color:#f9f9f9;"><tbody>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <img src="images/UofT-Logo.png" alt="clean-usnob" width="140" height="140">
@@ -110,10 +63,9 @@
                 Department of Computer Science, University of Toronto 
               <br>
                 Sep 2022 - 2024 | Toronto, ON
-              <p> </p> 
             </td>
           </tr>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;background-color:#f9f9f9;"><tbody>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <img src="images/UofT-Logo.png" alt="clean-usnob" width="140" height="140">
@@ -133,6 +85,9 @@
             </td>
           </tr>
         </tbody></table>
+        <p> </p>
+
+<!-- ------------------------------------------------------------------------------------------------------- -->
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
           <tr>
             <td style="text-align: left; background-color: rgb(249, 249, 249)">
@@ -143,20 +98,58 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>  
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/PDV.png" alt="clean-usnob" width="140" height="140">
+              <img src="images/CAMM.png" alt="clean-usnob" width="140" height="140">
+            </td>
+            <td width="100%" valign="middle">
+              <papertitle>CAMM: Building Category-agnostic and Animatable 3D Models from Monocular Videos</papertitle>
+              <br>
+                <b>Tianshu Kuai</b>, Akash Karthikeyan, Yash Kant, Ashkan Mirzaei, Igor Gilitschenski
+              <br>
+                <em><strong>Under Review, 2022</strong></em>
+              <p> 
+                A novel pipeline for building 3D animatable models for articulated and deformable objects from monocular videos without any shape prior or template.
+              </p>
+            </td>
+          </tr>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>  
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/ST.png" alt="clean-usnob" width="140" height="140">
+            </td>
+            <td width="100%" valign="middle">
+              <papertitle>Self-Supervised Image-to-Point Distillation via Semantically Tolerant Contrastive Loss</papertitle>
+              <br>
+                Anas Mahmoud, Jordan S.K. Hu, <b>Tianshu Kuai</b>, Ali Harakeh, Liam Paull, Steven L. Waslander
+              <br>
+              <em><strong>Under Review, 2022</strong></em>
+              <p> 
+                A self-supervised 2D-to-3D representation learning framework for LiDAR semantic segmentation in autonomous driving.
+              </p>
+            </td>
+          </tr>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>  
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/PDV2.png" alt="clean-usnob" width="140" height="140">
             </td>
             <td width="100%" valign="middle">
               <a href="https://openaccess.thecvf.com/content/CVPR2022/html/Hu_Point_Density-Aware_Voxels_for_LiDAR_3D_Object_Detection_CVPR_2022_paper.html"><papertitle>Point Density-Aware Voxels for LiDAR 3D Object Detection</papertitle></a>
               <br>
                 Jordan S.K. Hu, <b>Tianshu Kuai</b>, Steven L. Waslander
               <br>
-                <b>CVPR 2022</b>
-              <p> 
+              <em><strong>CVPR 2022</strong></em>
+              <br>
+              <a href="https://arxiv.org/abs/2203.05662">arXiv</a> / <a href="https://github.com/TRAILab/PDV">code</a>
+              <br>
+              <p>
                 An end-to-end two stage LiDAR 3D object detection architecture designed to account for point cloud density variations.
               </p>
             </td>
           </tr>
         </tbody></table>
+        <p> </p>
+
+<!-- ------------------------------------------------------------------------------------------------------- -->
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
           <tr>
             <td style="text-align: left; background-color: rgb(249, 249, 249)">
@@ -258,9 +251,10 @@
       </td>
     </tr>
   </table>
+  <p> </p>
+  <!-- ------------------------------------------------------------------------------------------------------- -->
 
-
-  <div align="center" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"></div>
+  <div align="center" style="margin:auto;padding-top:10px">
     <div style="width:10%">
       <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=_DCXyyB7_3QA-idMM81OXIkmeGKIUkThIbDx_c8en2M"></script>
     </div>
